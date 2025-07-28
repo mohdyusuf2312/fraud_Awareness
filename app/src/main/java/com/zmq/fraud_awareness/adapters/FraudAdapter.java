@@ -33,6 +33,7 @@ public class FraudAdapter extends RecyclerView.Adapter<FraudAdapter.FraudViewHol
     public void onBindViewHolder(@NonNull FraudViewHolder holder, int position) {
         Fraud fraud = fraudList.get(position);
         holder.txtTitle.setText(fraud.getTitle());
+        holder.txtDescription.setText(fraud.getDescription());
         holder.txtCategory.setText(fraud.getCategory());
         holder.txtDate.setText(fraud.getDate());
     }
@@ -43,11 +44,12 @@ public class FraudAdapter extends RecyclerView.Adapter<FraudAdapter.FraudViewHol
     }
 
     public static class FraudViewHolder extends RecyclerView.ViewHolder {
-        TextView txtTitle, txtCategory, txtDate;
+        TextView txtTitle, txtDescription, txtCategory, txtDate;
 
         public FraudViewHolder(@NonNull View itemView) {
             super(itemView);
             txtTitle = itemView.findViewById(R.id.txt_title);
+            txtDescription = itemView.findViewById(R.id.txt_description);
             txtCategory = itemView.findViewById(R.id.txt_category);
             txtDate = itemView.findViewById(R.id.txt_date);
         }
