@@ -1,0 +1,70 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# === Android/Java Project ===
+
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Gradle files
+.gradle/
+build/
+*/build/
+
+# Local configuration
+.local.properties
+*.iml
+.idea/
+*.ipr
+*.iws
+.DS_Store
+
+# Sign/Keystore files
+*.jks
+*.keystore
+
+# Logs and crash reports
+*.log
+*.stacktrace
+
+# Android Studio specific
+/.idea
+*.iml
+/.gradle
+captures/
+.externalNativeBuild/
+
+# Unit test / instrumentation test result files
+test-results/
+androidTest-results/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Assets you want to ignore (optional)
+# Remove the line below if you want to version control the videos/articles
+# app/src/main/assets/
+
+# SQLite cache (optional)
+# If your app writes or caches to these, uncomment below
+# *.db
+# *.db-journal
+
+# Ignore generated ProGuard files
+proguard/
+*.pro.user

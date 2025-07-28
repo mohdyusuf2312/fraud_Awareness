@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <!-- Custom Toolbar -->
+    <include layout="@layout/custom_toolbar" />
+
+    <!-- Content -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_add_fraud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕ Add Fraud Case"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/accent_color"
+        android:textColor="@color/white"
+        android:padding="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_frauds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    </LinearLayout>
+
+</LinearLayout>

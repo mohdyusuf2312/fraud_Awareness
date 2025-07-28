@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <!-- Custom Toolbar -->
+    <include layout="@layout/custom_toolbar" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Welcome Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Fraud Awareness"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay safe from fraud and scams"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Navigation Buttons -->
+    <Button
+        android:id="@+id/btn_frauds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📂 View Fraud Cases"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@color/white"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btn_articles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📰 Read Articles"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@color/white"
+        android:padding="16dp" />
+
+
+    <Button
+        android:id="@+id/btn_videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎥 Watch Videos"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@color/white"
+        android:padding="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Fraud_Awareness" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="android:windowBackground">@color/background_color</item>
+    </style>
+
+    <style name="Theme.Fraud_Awareness" parent="Base.Theme.Fraud_Awareness" />
+
+    <!-- Custom Toolbar Style -->
+    <style name="CustomToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/primary_color</item>
+        <item name="android:elevation">4dp</item>
+        <item name="titleTextColor">@color/toolbar_text</item>
+        <item name="subtitleTextColor">@color/toolbar_text</item>
+        <item name="android:theme">@style/ThemeOverlay.Material3.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.Material3.Light</item>
+    </style>
+</resources>
